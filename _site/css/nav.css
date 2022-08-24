@@ -1,20 +1,42 @@
-.content {
-  display: grid;
-  grid-template-columns: minmax(300px, 5rem) 1fr;
-  grid-template-rows: 1fr;
-  height: 100vh;
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
-.topbar {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 50px;
+
+.mainContainer {
+  height: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -webkit-align-content: stretch;
+  align-content: stretch;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 50px;
   background-color: yellow;
 }
+
 nav {
-  height: 100%;
-  background-color: violet;
+  background-color: lightgreen;
+  width: 300px;
 }
+
 main {
+  background-color: red;
+  -webkit-flex: 1;
+  flex: 1;
+  position: relative;
+}
+
+section {
+  background-color: steelblue;
+  position: absolute;
+  width: 100%;
   height: 100%;
-  background-color: aqua;
+  overflow-y: auto;
 }
