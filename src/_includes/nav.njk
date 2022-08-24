@@ -1,23 +1,18 @@
-<nav>
-  <ul>
-    <h3>
-      <a href="/posts/miniature-painting">🎨🍊 Mini Painting</a>
-    </h3>
-    {% for blog in collections.Painting %}
-    <li>
-      <a href="{{ blog.url }}">{{ blog.data.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
+<header>
+  <a href="/posts/{{ tags }}">
+    {% if tags %}{{ tags }} / {% endif %}{{ title }}</a
+  >
+</header>
 
-  <ul>
+<nav>
+  {% for nav in navigations %}
     <h3>
-      <a href="/posts/blender">🎨🧱 Blender</a>
+      <a href="/posts/{{ nav.link }}">{{ nav.title }}</a>
     </h3>
-    {% for blog in collections.Blender %}
-    <li>
-      <a href="{{ blog.url }}">{{ blog.data.title }}</a>
-    </li>
+    {% for stuff in collections[nav.tag] %}
+      <li>
+        <a href="{{ stuff.url }}">{{ stuff.data.title }}</a>
+      </li>
     {% endfor %}
-  </ul>
+  {% endfor %}
 </nav>

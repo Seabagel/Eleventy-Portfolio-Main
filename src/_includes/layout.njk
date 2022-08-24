@@ -6,11 +6,6 @@
     <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
 
     <div class="mainContainer">
-      <header>
-        <a href="{{ page.url }}"
-          >{% if tags %}{{ tags }} / {% endif %}{{ title }}</a
-        >
-      </header>
       {% include 'nav.njk' %}
       <main>
         <section>
