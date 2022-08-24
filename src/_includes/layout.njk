@@ -8,27 +8,7 @@
       <header>
         <a href="/">{{ tags }} / {{ title }}</a>
       </header>
-      <nav>
-        <ul>
-          <p>
-            <b><a href="/posts/miniature-painting">Mini Painting</a></b>
-          </p>
-          {% for blog in collections.Painting %}
-          <li>
-            <a href="{{ blog.url }}">{{ blog.data.title }}</a>
-          </li>
-          {% endfor %}
-
-          <p>
-            <b><a href="/posts/blender">Blender</a></b>
-          </p>
-          {% for blog in collections.Blender %}
-          <li>
-            <a href="{{ blog.url }}">{{ blog.data.title }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </nav>
+      {% include 'nav.njk' %}
       <main>
         <section>
           {{ content | safe }}
