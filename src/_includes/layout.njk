@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "head.njk" %}
+  <body>
+    {% include "nav.njk" %}
+    <!-- Grab the content from the page data, dump it here, and mark it as safe -->
+    <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
+    {{ content | safe }}
+  </body>
+</html>

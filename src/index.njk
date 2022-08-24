@@ -1,0 +1,15 @@
+---
+layout: layout.njk
+title: Hello World
+---
+
+<h1>Yo Eleventy</h1>
+<p>This site rocks.</p>
+
+<ul>
+  {% for blog in collections.Blog %}
+    <li>
+      <a href="{{ blog.url }}">{{ blog.data.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
