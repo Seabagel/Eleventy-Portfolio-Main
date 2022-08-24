@@ -1,0 +1,13 @@
+---
+layout: layout.njk
+title: Miniature-Painting Guide
+---
+
+<h1>Miniature-Painting Guide</h1>
+<p>A guide about painting Warhammer, DnD, and 3D printed Miniatures</p>
+
+{% for blog in collections.Painting %}
+<li>
+  <a href="{{ blog.url }}">{{ blog.data.title }}</a>
+</li>
+{% endfor %}

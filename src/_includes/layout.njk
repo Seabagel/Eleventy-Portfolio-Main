@@ -2,15 +2,37 @@
 <html lang="en">
   {% include "head.njk" %}
   <body>
-    {% include "nav.njk" %}
     <!-- Grab the content from the page data, dump it here, and mark it as safe -->
     <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
-    {# {{ content | safe }} #}
-    <header>Gasdfasdf</header>
     <div class="mainContainer">
-      <nav>LEFT</nav>
+      <header>
+        <a href="/">{{ tags }} / {{ title }}</a>
+      </header>
+      <nav>
+        <ul>
+          <p>
+            <b><a href="/posts/miniature-painting">Mini Painting</a></b>
+          </p>
+          {% for blog in collections.Painting %}
+          <li>
+            <a href="{{ blog.url }}">{{ blog.data.title }}</a>
+          </li>
+          {% endfor %}
+
+          <p>
+            <b><a href="/posts/blender">Blender</a></b>
+          </p>
+          {% for blog in collections.Blender %}
+          <li>
+            <a href="{{ blog.url }}">{{ blog.data.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
       <main>
-        <section>RIGHT</section>
+        <section>
+          {{ content | safe }}
+        </section>
       </main>
     </div>
   </body>

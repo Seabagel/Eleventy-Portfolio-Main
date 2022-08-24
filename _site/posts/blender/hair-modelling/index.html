@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- Grab title from the page data and dump it here -->
-  <title>Hello World</title>
+  <title>Hair Modelling</title>
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/nav.css" />
 </head>
@@ -15,7 +15,7 @@
     <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
     <div class="mainContainer">
       <header>
-        <a href="/"> / Hello World</a>
+        <a href="/">Blender / Hair Modelling</a>
       </header>
       <nav>
         <ul>
@@ -72,9 +72,33 @@
       </nav>
       <main>
         <section>
-          
-<h1>Yo Eleventy</h1>
-<p>This site rocks.</p>
+          <h2>Hair Modelling</h2>
+<h3>Skin Modifier</h3>
+<ul>
+<li>Preferences &gt; Enable Extra Meshes</li>
+<li>Add a single vertices</li>
+<li>Start making a path</li>
+<li>Add Skin Modifier (It'll look like a rectangle)</li>
+<li>Add Subdivision Modifier (This makes the shape rounder)</li>
+<li>Press Ctrl + A to adjust the thickness</li>
+</ul>
+<h3>Bezier Curve</h3>
+<ul>
+<li>Create a Bezier curve, and shape it to a triangle (Sharp on the top, smooth on the side/bottom, this is the shape of the hair)</li>
+<li>Create a Nurbs Path (Or just a simple path, Curves are harder to control)</li>
+<li>Copy the shape of the Bezier curve to the Nurbs Path
+<ul>
+<li>Click the path mesh object, switch to Edit mode</li>
+<li>Under the Object Data Properties, find the Geometry drop down</li>
+<li>Under Geometry, click on Bevel</li>
+<li>Switch to Object</li>
+<li>Change the object to the Bezier Curve you've created</li>
+<li>Enable Fill Caps so the model isn't hollow/tubular</li>
+</ul>
+</li>
+<li>Press Ctrl + T  to Twist the hair</li>
+<li>Press Alt + S to make the hair thicker or smaller</li>
+</ul>
 
         </section>
       </main>

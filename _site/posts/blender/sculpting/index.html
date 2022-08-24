@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- Grab title from the page data and dump it here -->
-  <title>Hello World</title>
+  <title>Sculpting</title>
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/nav.css" />
 </head>
@@ -15,7 +15,7 @@
     <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
     <div class="mainContainer">
       <header>
-        <a href="/"> / Hello World</a>
+        <a href="/">Blender / Sculpting</a>
       </header>
       <nav>
         <ul>
@@ -72,9 +72,69 @@
       </nav>
       <main>
         <section>
-          
-<h1>Yo Eleventy</h1>
-<p>This site rocks.</p>
+          <h2>Sculpting</h2>
+<h3>Shrinkwrap Low Poly to High Poly</h3>
+<ul>
+<li>Object Data
+<ul>
+<li>Normals &gt; Turn Off Auto Smooth</li>
+<li>Remesh &gt; Smooth Normals</li>
+</ul>
+</li>
+<li>Shrinkwrap Modifier
+<ul>
+<li>Wrap Method: Project</li>
+<li>Axis: Positive &amp; Negative</li>
+<li>Target: High poly model</li>
+<li>Turn on Uncage</li>
+</ul>
+</li>
+<li>Multi-Res Modifier
+<ul>
+<li>Put it above the Shrinkwrap</li>
+<li>Subdivide 3 times</li>
+</ul>
+</li>
+<li>Apply the Shrinkwrap modifier</li>
+</ul>
+<h3>Sharpening Edges</h3>
+<ul>
+<li>Mesh Filter Tool
+<ul>
+<li>Go to Sculpt Mode</li>
+<li>Pick the Mesh Filter Tool</li>
+<li>Drag the cursor from Left to right until you get the desired sharpness</li>
+<li>This tool also has Delay Viewport updates, to reduce the amount of times Blender re-renders the high-poly mesh when moving around the viewport</li>
+</ul>
+</li>
+</ul>
+<h3>Retopology</h3>
+<ul>
+<li>Method 1. Multi-res Modifier
+<ul>
+<li>Rebuild Subdivisions</li>
+</ul>
+</li>
+<li>Method 2. Voxel Remesh
+<ul>
+<li>Go to Sculpting Mode</li>
+<li>Remesh Menu</li>
+<li>Select the resolution</li>
+<li>Remesh</li>
+</ul>
+</li>
+<li>Method 3. Instant Meshes
+<ul>
+<li>https://github.com/wjakob/instant-meshes</li>
+</ul>
+</li>
+</ul>
+<h3>Brush Setting</h3>
+<ul>
+<li>Brush &gt; Accumulate: So the brushes would add to the previous stroke continuously</li>
+<li>Falloff: Change the shape and roundness of brush</li>
+<li>Smooth Stroke</li>
+</ul>
 
         </section>
       </main>

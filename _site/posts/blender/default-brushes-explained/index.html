@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Grab title from the page data and dump it here -->
+  <title>Default Brushes Explained (40+ brushes)</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/nav.css" />
+</head>
+  <body>
+    <!-- Grab the content from the page data, dump it here, and mark it as safe -->
+    <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
+    <div class="mainContainer">
+      <header>
+        <a href="/">Blender / Default Brushes Explained (40+ brushes)</a>
+      </header>
+      <nav>
+        <ul>
+          <p>
+            <b><a href="/posts/miniature-painting">Mini Painting</a></b>
+          </p>
+          
+          <li>
+            <a href="/posts/painting/paint-consistency/">Paint Consistency</a>
+          </li>
+          
+          <li>
+            <a href="/posts/painting/paint-additives/">Paint Additives</a>
+          </li>
+          
+          <li>
+            <a href="/posts/painting/paint-techniques/">Paint Techniques</a>
+          </li>
+          
+
+          <p>
+            <b><a href="/posts/blender">Blender</a></b>
+          </p>
+          
+          <li>
+            <a href="/posts/blender/modifiers/">Modifiers</a>
+          </li>
+          
+          <li>
+            <a href="/posts/blender/general-mesh-manipulation/">General Mesh Manipulation</a>
+          </li>
+          
+          <li>
+            <a href="/posts/blender/hard-surface-modelling/">Hard Surface Modelling</a>
+          </li>
+          
+          <li>
+            <a href="/posts/blender/sculpting/">Sculpting</a>
+          </li>
+          
+          <li>
+            <a href="/posts/blender/hair-modelling/">Hair Modelling</a>
+          </li>
+          
+          <li>
+            <a href="/posts/blender/z-brush-brushes/">ZBrush Brushes</a>
+          </li>
+          
+          <li>
+            <a href="/posts/blender/default-brushes-explained/">Default Brushes Explained (40+ brushes)</a>
+          </li>
+          
+        </ul>
+      </nav>
+      <main>
+        <section>
+          <h2>Default Blender Brushes explained (40+ brushes)</h2>
+<ul>
+<li>Note: Some brushes are a combination of two/more brushes</li>
+<li><a href="https://www.youtube.com/watch?v=eFhXnUoxCjw">Noggi - Every Blender Sculpting Brush Explained in 13 Minutes</a></li>
+</ul>
+<h3>Draw Brush</h3>
+<ul>
+<li>Draw = Most basic brush, round shape
+<ul>
+<li>Draw Sharp = Sharper falloff</li>
+<li>Clay Strips = Square shape</li>
+</ul>
+</li>
+<li>Clay Thumb = Pushes mesh like a thumb</li>
+</ul>
+<h3>Layer Brush</h3>
+<ul>
+<li>Layer = Draw with a consistent height, Persistent option caps how far it can pull the mesh</li>
+</ul>
+<h3>Smooth Brush</h3>
+<ul>
+<li>Smooth = Smooths jagged meshes
+<ul>
+<li>Deformation Laplacian smooths the surface and volume, and Surface smooths while perserving volume</li>
+</ul>
+</li>
+</ul>
+<h3>Fill Brush</h3>
+<ul>
+<li>Fill = Fills gaps between two different heights to the average height</li>
+<li>Scrape = Like Fill, but moves vertices above it into the average height
+<ul>
+<li>Invert to Fill setting lets you switch between the Fill and Scrape brush using the Ctrl key</li>
+</ul>
+</li>
+</ul>
+<h3>Pinch Brush</h3>
+<ul>
+<li>Pinch = Moves vertices closer to the center of the brush</li>
+<li>Rotate</li>
+<li>Slide Relax - Moves geometry to areas to sculpt that requires more detail, Holding Shift relaxes to sculpt</li>
+</ul>
+<h3>Grab Brush</h3>
+<ul>
+<li>Grab = Moves the mesh towards the cursor
+<ul>
+<li>Grab Silhouette constricts the movement to the edge of the visible mesh</li>
+</ul>
+</li>
+<li>Elastic Deform = Like Grab, but for bigger movement</li>
+<li>Snake Hook - Grabs the mesh and pulls it, but also rotation is included
+<ul>
+<li>Magnify controls how much volume is lost each stroke</li>
+<li>Rake controls how much rotation is lost each stroke</li>
+<li>Deformation Elastic and Deform</li>
+</ul>
+</li>
+<li>Thumb = Like Clay Thumb but sticks to the surface, without adding volume</li>
+<li>Pose Brush = Moves geometry based on the bones of the object's Armature
+<ul>
+<li>Deformation includes Rotate/Twist, Scale/Translate, Squash/Stretch</li>
+<li>Rotation Origins rotates from:
+<ul>
+<li>Topology (which is automatic based of the volume of the sculpt)</li>
+<li>Face Sets, which detirmines one bone per Face sets</li>
+<li>Face Sets FK, which applies Forward Kinematics</li>
+</ul>
+</li>
+<li>Lock Rotation When Scaling locks the Axis of the bone when deforming</li>
+</ul>
+</li>
+<li>Boundary = Detects unconnected edges, and deforms them. Relies on good topology to get good results
+<ul>
+<li>Deformations include:
+<ul>
+<li>Bend</li>
+<li>Expand</li>
+<li>Inflate</li>
+<li>Grab</li>
+<li>Twist</li>
+<li>Smooth</li>
+</ul>
+</li>
+<li>Boundary Fallof detirmines how the Falloff is applied to the edge:
+<ul>
+<li>Constant = The entire edge</li>
+<li>Brush Radius = The radius of the brush</li>
+<li>Loop = Loops the radius of the brush on the entire edge</li>
+<li>Loop and Invert = Inverted Loop</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>Cloth Brush</h3>
+<h3>Combination Brushes</h3>
+<ul>
+<li>Flatten = Combines the Fill and Scrape into one brush</li>
+<li>Clay = Combines the Flatten and Draw brushes</li>
+<li>Multi-plane Scrape = Uses 2 planes to scrape a surface</li>
+<li>Crease = Combines Punch and Draw sharp brush</li>
+</ul>
+
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+---
+layout: layout.njk
+title: Blender Workflow
+---
+
+<h1>Blender Non-Destructive Workflow</h1>
+<p>
+  Guide to Non-Destructive Workflow for Hard-Surface Modelling and Sculpting.
+  Some shurtcuts, Modifiers, and how to fix weird issues
+</p>
+
+{% for blog in collections.Blender %}
+<li>
+  <a href="{{ blog.url }}">{{ blog.data.title }}</a>
+</li>
+{% endfor %}

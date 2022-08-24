@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- Grab title from the page data and dump it here -->
-  <title>Hello World</title>
+  <title>General Mesh Manipulation</title>
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/nav.css" />
 </head>
@@ -15,7 +15,7 @@
     <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
     <div class="mainContainer">
       <header>
-        <a href="/"> / Hello World</a>
+        <a href="/">Blender / General Mesh Manipulation</a>
       </header>
       <nav>
         <ul>
@@ -72,9 +72,63 @@
       </nav>
       <main>
         <section>
-          
-<h1>Yo Eleventy</h1>
-<p>This site rocks.</p>
+          <h2>General Mesh Manipulation</h2>
+<h3>Combining Vertices</h3>
+<ul>
+<li>Method 1.
+<ul>
+<li>Click vertices</li>
+<li>Press M to merge</li>
+<li>Merge at center</li>
+</ul>
+</li>
+<li>Method 2.
+<ul>
+<li>Go to Tools</li>
+<li>Options</li>
+<li>Automerge</li>
+<li>Turn Snap on &gt; Set to Vertex</li>
+<li>Press GG to slide vertex to the other vertices</li>
+</ul>
+</li>
+</ul>
+<h3>Extrude Along Normals</h3>
+<ul>
+<li>Alt + E</li>
+<li>Extrude Along Normals</li>
+</ul>
+<h3>Joining Objects</h3>
+<ul>
+<li>Shift Click 2 objects (The order is important, last object is the destination object)</li>
+<li>Press E</li>
+</ul>
+<h3>Seperating Objects</h3>
+<ul>
+<li>Select Faces</li>
+<li>Press P &gt; Seperate by selection</li>
+</ul>
+<h3>Select Similiar</h3>
+<ul>
+<li>Select an edge</li>
+<li>Shift + G</li>
+<li>Crease, Seam, Sharpness</li>
+</ul>
+<h3>Fix Circle Merged at Center</h3>
+<ul>
+<li>Select the weird faces</li>
+<li>Dissolve Edges</li>
+<li>Poke Face</li>
+</ul>
+<h3>Apply All modifiers</h3>
+<ul>
+<li>Select All (Press A)</li>
+<li>Space or F3</li>
+<li>Search &quot;Convert to Mesh&quot;
+<ul>
+<li>Or Menu &gt; Object &gt; Convert to &gt; Mesh</li>
+</ul>
+</li>
+</ul>
 
         </section>
       </main>
