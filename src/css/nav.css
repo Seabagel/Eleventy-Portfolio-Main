@@ -65,10 +65,14 @@ nav {
   color: var(--nav-color);
 }
 
-nav li {
-  padding: 1em;
+nav h3 {
   border: 1px solid grey;
-  list-style: none;
+  padding: .5rem;
+}
+
+nav li {
+  padding: .25rem;
+  list-style: circle;
 }
 
 #myNavigation {
