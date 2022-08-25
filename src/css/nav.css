@@ -1,11 +1,14 @@
 :root {
   --header-font-size: 1.5rem;
   --header-height: calc(1.5rem * 2.5); /* header-font-size * (2 + .175) */
-  --header-color: #1976d2;
+  /* --header-background-color: #2980b9; #1976d2, #427be4*/
+  --header-background-color: #2980b9;
+  /* --nav-color: #272c31; #2a2f3a, #343131 */
   --nav-color: #272c31;
   --nav-padding: 1.125rem 0 1.875rem;
   --link-color: orange;
   --main-padding: 3rem;
+  --main-background-color: #efefef;
 }
 
 html,
@@ -28,9 +31,12 @@ body {
 }
 
 header {
-  background-color: var(--header-color);
-  flex: 0 1 auto;
-  display: block;
+  background-color: var(--header-background-color);
+  flex: 1 1 auto;
+
+  top: 0;
+  width: 100%;
+  position: fixed;
 }
 
 header a {
@@ -67,18 +73,22 @@ nav a {
 main {
   flex: 1;
   padding: var(--main-padding);
-  background-color: whitesmoke;
+  background-color: var(--main-background-color);
+  margin-top: var(--header-height);
 }
 section {
   margin: 0 auto;
   max-width: 1080px;
-  border-radius: 4px;
+  border-radius: 5px;
   background-color: white;
   padding: 2rem;
 }
 
 a:hover {
-  color: var(--link-color);
   text-decoration: underline;
   cursor: pointer;
+}
+
+nav a:hover {
+  color: var(--link-color);
 }

@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: Default Brushes Explained (40+ brushes)
+title: Default Brushes Explained
 tags: Blender
 ---
 
