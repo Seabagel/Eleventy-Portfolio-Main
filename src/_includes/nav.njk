@@ -1,18 +1,21 @@
 <header>
-  <a href="/posts/{{ tags }}">
+  {# <a href="/posts/{{ tags }}"> #}
+  <a onclick="toggleNavigation()">
     {% if tags %}{{ tags }} / {% endif %}{{ title }}</a
   >
 </header>
 
-<nav>
+<nav id="myNavigation">
   {% for nav in navigations %}
     <h3>
       <a href="/posts/{{ nav.link }}">{{ nav.title }}</a>
     </h3>
-    {% for stuff in collections[nav.tag] %}
-      <li>
-        <a href="{{ stuff.url }}">{{ stuff.data.title }}</a>
-      </li>
-    {% endfor %}
+    <ul>
+      {% for stuff in collections[nav.tag] %}
+        <li>
+          <a href="{{ stuff.url }}">{{ stuff.data.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
   {% endfor %}
 </nav>

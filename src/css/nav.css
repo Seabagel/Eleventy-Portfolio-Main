@@ -16,11 +16,17 @@ header {
   background-color: yellow;
   text-align: center;
   flex: 0 1 auto;
+  user-select: none;
+  font-weight: bold;
 }
 
 nav {
   background-color: lightgreen;
-  flex: 0 1 auto;
+  flex: 1 1 auto;
+  width: 100%;
+  top: 50px;
+  position: fixed;
+  padding: 1.6rem 3rem 2.2rem;
 }
 
 main {
@@ -31,4 +37,9 @@ main {
 section {
   margin: 0 auto;
   max-width: 1080px;
+}
+
+header a:hover {
+  cursor: pointer;
+  color: red;
 }
