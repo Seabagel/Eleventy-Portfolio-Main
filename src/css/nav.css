@@ -62,6 +62,13 @@ nav {
   width: 100%;
   padding: var(--nav-padding);
   position: fixed;
+  color: var(--nav-color);
+}
+
+nav li {
+  padding: 1em;
+  border: 1px solid grey;
+  list-style: none;
 }
 
 #myNavigation {
@@ -69,7 +76,7 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: var(--nav-color);
   text-decoration: none;
 }
 
