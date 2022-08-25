@@ -1,4 +1,7 @@
+const eleventyPluginFilesMinifier  = require("@sherby/eleventy-plugin-files-minifier");
+
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
   // Copy `src/style.css` to `_site/style.css`
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/js");
