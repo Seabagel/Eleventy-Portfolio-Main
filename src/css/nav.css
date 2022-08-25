@@ -3,11 +3,14 @@
   --header-height: calc(1.5rem * 2.5); /* header-font-size * (2 + .175) */
   /* --header-background-color: #2980b9; #1976d2, #427be4*/
   --header-background-color: #2980b9;
-  /* --nav-color: #272c31; #2a2f3a, #343131 */
-  --nav-color: #272c31;
+  /* --nav-background-color: #272c31; #2a2f3a, #343131 */
+  --nav-background-color: #343131;
+  --nav-color: #d9d9d9;
   --nav-padding: 1.125rem 0 1.875rem;
   --link-color: orange;
   --main-padding: 3rem;
+  --section-padding: calc(1.618em * 1.5) calc(1.618em * 1.8)
+    calc(3.236em * 1.125);
   --main-background-color: #efefef;
 }
 
@@ -54,7 +57,7 @@ header a {
 
 nav {
   top: var(--header-height);
-  background-color: var(--nav-color);
+  background-color: var(--nav-background-color);
   flex: 1 1 auto;
   width: 100%;
   padding: var(--nav-padding);
@@ -81,7 +84,7 @@ section {
   max-width: 1080px;
   border-radius: 5px;
   background-color: white;
-  padding: 2rem;
+  padding: var(--section-padding);
 }
 
 a:hover {
