@@ -1,11 +1,10 @@
 ---
-layout: layout.njk
+layout: layout-pages.njk
 title: Hair Modelling
 tags: Blender
 ---
 
-## Hair Modelling
-### Skin Modifier
+## Skin Modifier
 - Preferences > Enable Extra Meshes
 - Add a single vertices
 - Start making a path
@@ -13,7 +12,7 @@ tags: Blender
 - Add Subdivision Modifier (This makes the shape rounder)
 - Press Ctrl + A to adjust the thickness
 
-### Bezier Curve
+## Bezier Curve
 - Create a Bezier curve, and shape it to a triangle (Sharp on the top, smooth on the side/bottom, this is the shape of the hair)
 - Create a Nurbs Path (Or just a simple path, Curves are harder to control)
 - Copy the shape of the Bezier curve to the Nurbs Path

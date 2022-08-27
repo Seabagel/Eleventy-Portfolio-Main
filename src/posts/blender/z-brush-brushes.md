@@ -1,19 +1,18 @@
 ---
-layout: layout.njk
-title: ZBrush Brushes
+layout: layout-pages.njk
+title: Z-Brush Brushes in Blender
 tags: Blender
 ---
 
-## Z-Brush Brushes in Blender
-- [Armored Colony - hPolish and Planar sculpting brushes in Blender](https://www.youtube.com/watch?v=gIujBF74FQg)
+> [Armored Colony - hPolish and Planar sculpting brushes in Blender](https://www.youtube.com/watch?v=gIujBF74FQg)
 
-### hPolish Brush
+## hPolish Brush
 - Use Scrape Brush
 - Duplicate the default preset
 - Plane trim = 0.2 m (Controls how deep from the point gets affected)
 - Normal Radius = 0.06 (Controls how far the brush radius average the normals)
 
-### Planar
+## Planar
 - Use Scrape Brush
 - Duplicate the default preset
 - Under Advanced, turn ON Use Original Normal and Plane 

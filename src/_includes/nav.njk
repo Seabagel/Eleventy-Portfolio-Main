@@ -1,25 +1,27 @@
 <header>
   <div class="maxWidthContainer">
     {# <a href="/posts/{{ tags }}"> #}
-    <a onclick="toggleElement('myNavigation')">
-      {% if tags %}{{ tags }} / {% endif %}{{ title }}</a
-  >
+      <a onclick="toggleElement('myNavigation')">
+        🔎 Navigation {% if tags %}({{ tags }}){% endif %}
+      </a>
   </div>
 </header>
+
+{# {% if tags %}{{ tags }} / {% endif %}{{ title }} #}
 
 <nav id="myNavigation" style="display: none;">
   <div class="maxWidthContainer">
     {% for nav in navigations %}
-      <h3>
-        <a href="/posts/{{ nav.link }}">{{ nav.title }}</a>
-      </h3>
-      <ul>
-        {% for stuff in collections[nav.tag] %}
-          <li>
-            <a href="{{ stuff.url }}">{{ stuff.data.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
+    <h3>
+      <a href="/posts/{{ nav.link }}">{{ nav.title }}</a>
+    </h3>
+    <ul>
+      {% for stuff in collections[nav.tag] %}
+      <li>
+        <a href="{{ stuff.url }}">{{ stuff.data.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
     {% endfor %}
   </div>
 </nav>

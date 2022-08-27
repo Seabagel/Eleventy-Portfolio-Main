@@ -1,38 +1,36 @@
 ---
-layout: layout.njk
-title: Default Brushes Explained
+layout: layout-pages.njk
+title: Default Blender Brushes explained (40+ brushes)
 tags: Blender
 ---
 
-
-## Default Blender Brushes explained (40+ brushes)
-- Note: Some brushes are a combination of two/more brushes
+> Note: Some brushes are a combination of two/more brushes
 - [Noggi - Every Blender Sculpting Brush Explained in 13 Minutes](https://www.youtube.com/watch?v=eFhXnUoxCjw)
 
-### Draw Brush
+## Draw Brush
 - Draw = Most basic brush, round shape
   - Draw Sharp = Sharper falloff
   - Clay Strips = Square shape
 - Clay Thumb = Pushes mesh like a thumb
 
-### Layer Brush
+## Layer Brush
 - Layer = Draw with a consistent height, Persistent option caps how far it can pull the mesh
 
-### Smooth Brush
+## Smooth Brush
 - Smooth = Smooths jagged meshes
   - Deformation Laplacian smooths the surface and volume, and Surface smooths while perserving volume
 
-### Fill Brush
+## Fill Brush
 - Fill = Fills gaps between two different heights to the average height
 - Scrape = Like Fill, but moves vertices above it into the average height
   - Invert to Fill setting lets you switch between the Fill and Scrape brush using the Ctrl key
 
-### Pinch Brush
+## Pinch Brush
 - Pinch = Moves vertices closer to the center of the brush
 - Rotate
 - Slide Relax - Moves geometry to areas to sculpt that requires more detail, Holding Shift relaxes to sculpt
 
-### Grab Brush
+## Grab Brush
 - Grab = Moves the mesh towards the cursor
   - Grab Silhouette constricts the movement to the edge of the visible mesh
 - Elastic Deform = Like Grab, but for bigger movement
@@ -62,10 +60,10 @@ tags: Blender
     - Loop = Loops the radius of the brush on the entire edge
     - Loop and Invert = Inverted Loop
 
-### Cloth Brush
+## Cloth Brush
 
 
-### Combination Brushes
+## Combination Brushes
 - Flatten = Combines the Fill and Scrape into one brush
 - Clay = Combines the Flatten and Draw brushes
 - Multi-plane Scrape = Uses 2 planes to scrape a surface

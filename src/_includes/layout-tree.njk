@@ -1,0 +1,13 @@
+---
+layout: base-layout.njk
+---
+
+{% block content %}
+<h1>{{navigations[num].title}}</h1>
+{{content | safe}}
+{% for blog in collections[navigations[num].tag] %}
+<li>
+  <a href="{{ blog.url }}">{{ blog.data.title }}</a>
+</li>
+{% endfor %}
+{% endblock content %}

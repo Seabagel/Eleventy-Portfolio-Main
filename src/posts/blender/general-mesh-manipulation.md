@@ -1,10 +1,10 @@
 ---
-layout: layout.njk
+layout: layout-pages.njk
 title: General Mesh Manipulation
 tags: Blender
 ---
-## General Mesh Manipulation
-### Combining Vertices
+
+## Combining Vertices
 - Method 1.
   - Click vertices
   - Press M to merge
@@ -16,29 +16,29 @@ tags: Blender
   - Turn Snap on > Set to Vertex
   - Press GG to slide vertex to the other vertices
 
-### Extrude Along Normals
+## Extrude Along Normals
 - Alt + E
 - Extrude Along Normals
 
-### Joining Objects
+## Joining Objects
 - Shift Click 2 objects (The order is important, last object is the destination object)
 - Press E
 
-### Seperating Objects
+## Seperating Objects
 - Select Faces
 - Press P > Seperate by selection
 
-### Select Similiar
+## Select Similiar
 - Select an edge
 - Shift + G
 - Crease, Seam, Sharpness
 
-### Fix Circle Merged at Center
+## Fix Circle Merged at Center
 - Select the weird faces
 - Dissolve Edges
 - Poke Face
 
-### Apply All modifiers
+## Apply All modifiers
 - Select All (Press A)
 - Space or F3
 - Search "Convert to Mesh"
