@@ -3,5 +3,23 @@ layout: base-layout.njk
 title: Hello World
 ---
 
-<h1>Yo Eleventy</h1>
-<p>This site rocks.</p>
+<h1>Tim's personal Wiki</h1>
+<blockquote>
+  <p>
+    This site is still under construction, I'm going to add showcase pages (with pics and videos! 🖼️📼) outside the
+    wiki pages
+  </p>
+</blockquote>
+<h3>Site contents:</h3>
+{% for nav in navigations %}
+<h2>
+  <a href="/posts/{{ nav.slug }}">{{ nav.title }}</a>
+</h2>
+<ul>
+  {% for stuff in collections[nav.tag] %}
+  <li>
+    <p><a href="{{ stuff.url }}">{{ stuff.data.title }}</a></p>
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}

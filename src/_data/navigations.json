@@ -1,12 +1,12 @@
 [
   {
     "tag": "Blender",
-    "title": "🎨🍊 Blender Non-Destructive Workflow",
-    "link": "blender"
+    "title": "🎨🍊 Blender Workflow",
+    "slug": "blender"
   },
   {
     "tag": "Painting",
     "title": "🎨🧱 Miniature Painting",
-    "link": "miniature-painting"
+    "slug": "miniature-painting"
   }
 ]

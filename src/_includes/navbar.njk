@@ -3,14 +3,14 @@
     {# <a href="/posts/{{ tags }}"> #}
       <h1>
         <a onclick="toggleElement('myNavigation')">
-          🔎 Navigation {% if tags %}({{ tags }}){% endif %}
+          🔎 Navigation
         </a>
       </h1>
 
       <nav id="myNavigation" style="display: none;">
         {% for nav in navigations %}
         <h3>
-          <a href="/posts/{{ nav.link }}">{{ nav.title }}</a>
+          <a href="/posts/{{ nav.slug }}">{{ nav.title }}</a>
         </h3>
         <ul>
           {% for stuff in collections[nav.tag] %}
@@ -20,6 +20,9 @@
           {% endfor %}
         </ul>
         {% endfor %}
+        <a href="/">
+          🏡 Home
+        </a>
       </nav>
   </div>
 

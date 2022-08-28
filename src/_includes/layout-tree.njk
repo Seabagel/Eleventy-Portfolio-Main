@@ -5,6 +5,7 @@ layout: base-layout.njk
 {% block content %}
 <h1>{{navigations[num].title}}</h1>
 {{content | safe}}
+<h2>List of contents:</h2>
 {% for blog in collections[navigations[num].tag] %}
 <li>
   <a href="{{ blog.url }}">{{ blog.data.title }}</a>

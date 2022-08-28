@@ -34,9 +34,8 @@ section h3 {
 
 section h1 {
   border-bottom: 3px dashed lightgray;
-  font-size: 2.5rem;
+  font-size: 1.67rem;
   padding-bottom: 1rem;
-  text-align: center;
   margin-top: 1rem;
 }
 
@@ -49,9 +48,10 @@ section h2 {
 section h3 {
   max-width: 50%;
   margin: 0;
-  border-left: 0.27rem solid #272c31;
-  padding: 0.32em;
-  padding-left: 0.72rem;
+  border-left: 0.3rem solid #272c31;
+  padding: 0.5em;
+  padding-left: 0.8rem;
+  font-weight: bold;
 }
 
 section h2,
@@ -72,4 +72,12 @@ section blockquote {
 section p:not(blockquote p) {
   margin: 1rem;
   margin-bottom: 1.25rem;
+}
+
+section .titleName {
+  font-size: large;
+}
+
+section .tagName {
+  font-weight: 400;
 }
