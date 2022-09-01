@@ -20,18 +20,18 @@ header {
   top: 0;
   width: 100%;
   position: fixed;
-}
-header h1 {
-  user-select: none;
-  color: white;
-  font-weight: bold;
-  height: var(--header-height);
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  font-size: var(--header-font-size);
-  max-width: 1080px;
-  margin: 0 auto;
+  h1 {
+    user-select: none;
+    color: white;
+    font-weight: bold;
+    height: var(--header-height);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: var(--header-font-size);
+    max-width: 1080px;
+    margin: 0 auto;
+  }
 }
 nav {
   top: var(--header-height);
@@ -44,27 +44,29 @@ nav {
   position: fixed;
   color: var(--nav-color);
   margin: 0 auto;
+
+  h3 {
+    border: 1px solid grey;
+    padding: 0.5rem;
+    margin: initial;
+    max-width: 100%;
+  }
+  li {
+    padding: 0.25rem;
+    list-style: circle;
+  }
+  ul {
+    margin-bottom: 1.5rem;
+  }
+  a {
+    color: var(--nav-color);
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--nav-link-color);
+  }
 }
-nav h3 {
-  border: 1px solid grey;
-  padding: 0.5rem;
-  margin: initial;
-  max-width: 100%;
-}
-nav li {
-  padding: 0.25rem;
-  list-style: circle;
-}
-nav ul {
-  margin-bottom: 1.5rem;
-}
-nav a {
-  color: var(--nav-color);
-  text-decoration: none;
-}
-nav a:hover {
-  color: var(--nav-link-color);
-}
+
 #myNavigation {
   display: none;
 }

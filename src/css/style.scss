@@ -20,10 +20,12 @@ body {
   flex-direction: column;
   align-content: stretch;
 }
+
 a {
   text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-  cursor: pointer;
+
+  :hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
