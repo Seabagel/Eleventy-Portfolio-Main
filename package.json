@@ -6,5 +6,8 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
     "@sherby/eleventy-plugin-files-minifier": "^1.1.1"
+  },
+  "dependencies": {
+    "eleventy-sass": "^2.1.2"
   }
 }

@@ -1,5 +1,7 @@
 const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
 const navigations = require("./src/_data/navigations.json");
+const eleventySass = require("eleventy-sass");
+
 
 function srcByNavigationsTag(tagName) {
   return navigations[navigations.findIndex((i) => (i.tag == tagName ? true : false))]
@@ -10,6 +12,7 @@ module.exports = function (eleventyConfig) {
   // Copy `src/style.css` to `_site/style.css`
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/js");
+  eleventyConfig.addPlugin(eleventySass);
 
   // https://daily-dev-tips.com/posts/creating-a-custom-eleventy-filter/
   // or, use a Universal filter (an alias for all of the above)
