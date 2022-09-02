@@ -1,6 +1,8 @@
 :root {
   --header-font-size: 1.5rem;
-  --header-height: calc(1.5rem * 2.5); /* header-font-size * (2 + .175) */
+  --header-height: calc(
+    1.5rem * 2.5 - 16px
+  ); /* header-font-size * (2 + .175) */
   /* --header-background-color: #2980b9; #1976d2, #427be4*/
   --header-background-color: #2980b9;
   /* --nav-background-color: #272c31; #2a2f3a, #343131 */
@@ -9,6 +11,7 @@
   --nav-padding: 1.875rem;
   --nav-link-color: orange;
   --nav-max-width: 770px;
+  --navbutton-bgcolor: rgb(67, 178, 206);
 }
 .navbarContainer {
   max-width: var(--nav-max-width);
@@ -20,17 +23,28 @@ header {
   top: 0;
   width: 100%;
   position: fixed;
-  h1 {
+  #navButton {
+    cursor: pointer;
+    background-color: var(--navbutton-bgcolor);
     user-select: none;
     color: white;
     font-weight: bold;
     height: var(--header-height);
     display: flex;
-    justify-content: left;
     align-items: center;
     font-size: var(--header-font-size);
     max-width: 1080px;
-    margin: 0 auto;
+    margin: 8px auto;
+    margin-left: 0.5rem;
+    width: fit-content;
+    float: left;
+    padding: 8px;
+    padding-right: 13px;
+    border-radius: 4px;
+  }
+  #navButton:hover {
+    background-color: lightskyblue;
+    filter: hue-rotate(-20deg) brightness(98%);
   }
 }
 nav {
@@ -44,6 +58,8 @@ nav {
   position: fixed;
   color: var(--nav-color);
   margin: 0 auto;
+  // margin-top is Based on the #navButton's top margin and padding
+  margin-top: calc(0.5rem + 8px);
 
   h3 {
     border: 1px solid grey;

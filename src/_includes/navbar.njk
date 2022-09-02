@@ -1,11 +1,9 @@
 <header>
   <div class="navbarContainer">
     {# <a href="/posts/{{ tags }}"> #}
-      <h1>
-        <a onclick="toggleElement('myNavigation')">
-          🔎 Navigation
-        </a>
-      </h1>
+      <a onclick="toggleElement('myNavigation')" id="navButton">
+        🔎 Navigation
+      </a>
 
       <nav id="myNavigation" style="display: none;">
         {% for nav in navigations %}
