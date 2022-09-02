@@ -11,7 +11,7 @@
   --nav-padding: 1.875rem;
   --nav-link-color: orange;
   --nav-max-width: 770px;
-  --navbutton-bgcolor: rgb(67, 178, 206);
+  --navbutton-bgcolor: rgb(30, 159, 219);
 }
 .navbarContainer {
   max-width: var(--nav-max-width);
@@ -43,8 +43,8 @@ header {
     border-radius: 4px;
   }
   #navButton:hover {
-    background-color: lightskyblue;
-    filter: hue-rotate(-20deg) brightness(98%);
+    background-color: orange;
+    filter: hue-rotate(-30deg) brightness(98%);
   }
 }
 nav {
