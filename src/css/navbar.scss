@@ -60,6 +60,7 @@ nav {
   margin: 0 auto;
   // margin-top is Based on the #navButton's top margin and padding
   margin-top: calc(0.5rem + 8px);
+  height: max(35vw, 65vh);
 
   h3 {
     border: 1px solid grey;
@@ -81,6 +82,19 @@ nav {
   a:hover {
     color: var(--nav-link-color);
   }
+}
+
+.scrollRelative {
+  position: relative;
+  overflow: auto;
+  min-height: 100%;
+}
+
+.scrollAbsolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 #myNavigation {

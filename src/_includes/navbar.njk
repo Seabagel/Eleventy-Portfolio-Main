@@ -1,27 +1,31 @@
 <header>
   <div class="navbarContainer">
     {# <a href="/posts/{{ tags }}"> #}
-      <a onclick="toggleElement('myNavigation')" id="navButton">
+    <a onclick="toggleElement('myNavigation')" id="navButton">
         📖 Menu
       </a>
 
-      <nav id="myNavigation" style="display: none;">
-        {% for nav in navigations %}
-        <h3>
-          <a href="/posts/{{ nav.slug }}">{{ nav.title }}</a>
-        </h3>
-        <ul>
-          {% for stuff in collections[nav.tag] %}
-          <li>
-            <a href="{{ stuff.url }}">{{ stuff.data.title }}</a>
-          </li>
+    <nav id="myNavigation" style="display: none;">
+      <div class="scrollRelative">
+        <div class="scrollAbsolute">
+          {% for nav in navigations %}
+            <h3>
+              <a href="/posts/{{ nav.slug }}">{{ nav.title }}</a>
+            </h3>
+            <ul>
+              {% for stuff in collections[nav.tag] %}
+                <li>
+                  <a href="{{ stuff.url }}">{{ stuff.data.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
           {% endfor %}
-        </ul>
-        {% endfor %}
-        <a href="/">
+          <a href="/">
           🏡 Home
         </a>
-      </nav>
+        </div>
+      </div>
+    </nav>
   </div>
 
 </header>
