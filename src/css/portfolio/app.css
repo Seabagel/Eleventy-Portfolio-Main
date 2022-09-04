@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: -apple-system, blinkmacsystemfont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+}
+.container {
+  max-width: 1080px;
+}
+main {
+  background-color: brown;
+  color: white;
+  padding: 2rem 0;
+}
+section {
+  background-color: green;
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 1rem 1rem 2rem;
+  grid-gap: 1rem;
+  display: grid;
+  border-bottom: red 2px solid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+}
+.grid3 {
+  grid-template-columns: repeat(auto-fill, minmax(36ch, 1fr));
+}
+.grid2 {
+  grid-template-columns: repeat(auto-fill, minmax(40ch, 1fr));
+}
+section.reversed {
+  flex-direction: row-reverse;
+}

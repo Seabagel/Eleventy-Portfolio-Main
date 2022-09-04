@@ -1,0 +1,49 @@
+footer {
+  background-color: gold;
+  color: white;
+  padding: 4rem 2rem 5rem;
+  text-align: center;
+}
+
+footer ul {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+}
+
+footer ul li {
+  gap: 1rem;
+  justify-content: center;
+  display: block;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  gap: 0.5rem;
+}
+
+.flex-items {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  padding: 0.85rem;
+  background-color: orange;
+}
+
+.flex-items:hover {
+  cursor: pointer;
+  filter: saturate(2) brightness(0.85) opacity(0.9) hue-rotate(180deg);
+}
+footer .disclaimer {
+  margin-bottom: 1rem;
+}
+footer .copyright {
+  margin-top: 1.5rem;
+}

@@ -1,0 +1,32 @@
+header {
+  display: grid;
+  min-height: 50vh;
+  padding: 15vh max(5vw, 5rem) 5vh;
+  margin: 0 auto;
+  align-content: center;
+  justify-content: left;
+  text-align: left;
+}
+header h1 {
+  font-size: max(3vw, 4rem);
+}
+
+header p {
+  font-size: max(1vw, 1.5rem);
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  margin-bottom: 1em;
+}
+
+.headerImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(5px) saturate(0.15) contrast(0.7);
+  z-index: -2;
+}

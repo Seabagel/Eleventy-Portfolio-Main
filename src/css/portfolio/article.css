@@ -1,0 +1,19 @@
+article {
+  background-color: blue;
+  color: white;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 240px;
+}
+article img {
+  width: 100%;
+  position: relative;
+  border-radius: 3px;
+}
+article p {
+  margin: 1.5rem;
+}
+article h2 {
+  margin: 1.5rem;
+  margin-bottom: 0;
+}
