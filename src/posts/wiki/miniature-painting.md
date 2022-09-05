@@ -1,5 +1,5 @@
 ---
-layout: wiki/layout-tree.njk
+layout: wiki/wiki-tree.njk
 num: 1
 ---
 

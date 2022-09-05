@@ -1,5 +1,5 @@
 ---
-layout: wiki/layout-pages.njk
+layout: wiki/wiki-pages.njk
 title: Paint Consistency
 tags: Painting
 ---

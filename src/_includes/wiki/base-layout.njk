@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include "wiki/head.njk" %}
+{% include "wiki/wiki-head.njk" %}
 
 <body>
   <!-- Grab the content from the page data, dump it here, and mark it as safe -->
   <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
 
   <div class="mainContainer">
-    {% include 'wiki/navbar.njk' %}
+    {% include 'wiki/wiki-navbar.njk' %}
     <main>
       <section>
         {{ content | safe }}
