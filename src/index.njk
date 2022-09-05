@@ -1,5 +1,5 @@
 ---
-layout: base-layout.njk
+layout: wiki/base-layout.njk
 title: Hello World
 ---
 
@@ -11,7 +11,7 @@ title: Hello World
   </p>
 </blockquote>
 <h3>Site contents:</h3>
-{% for nav in navigations %}
+{% for nav in wikiNavigations %}
 <h2>
   <a href="/posts/{{ nav.slug }}">{{ nav.title }}</a>
 </h2>

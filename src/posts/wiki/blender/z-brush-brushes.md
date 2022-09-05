@@ -1,5 +1,5 @@
 ---
-layout: layout-pages.njk
+layout: wiki/layout-pages.njk
 title: Z-Brush Brushes in Blender
 tags: Blender
 ---

@@ -1,5 +1,5 @@
 ---
-layout: layout-pages.njk
+layout: wiki/layout-pages.njk
 title: Hair Modelling
 tags: Blender
 ---

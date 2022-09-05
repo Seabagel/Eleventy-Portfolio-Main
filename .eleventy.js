@@ -1,10 +1,10 @@
 const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
-const navigations = require("./src/_data/navigations.json");
+const wikiNavigations = require("./src/_data/wikiNavigations.json");
 const eleventySass = require("eleventy-sass");
 
 
-function srcByNavigationsTag(tagName) {
-  return navigations[navigations.findIndex((i) => (i.tag == tagName ? true : false))]
+function srcBywikiNavigationsTag(tagName) {
+  return wikiNavigations[wikiNavigations.findIndex((i) => (i.tag == tagName ? true : false))]
 }
 
 module.exports = function (eleventyConfig) {
@@ -18,10 +18,10 @@ module.exports = function (eleventyConfig) {
   // or, use a Universal filter (an alias for all of the above)
 
   eleventyConfig.addFilter("findTitle", function (tagName) {
-    return srcByNavigationsTag(tagName).title;
+    return srcBywikiNavigationsTag(tagName).title;
   });
   eleventyConfig.addFilter("findSlug", function (tagName) {
-    return srcByNavigationsTag(tagName).slug;
+    return srcBywikiNavigationsTag(tagName).slug;
   });
 
   return {
