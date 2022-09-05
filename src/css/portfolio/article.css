@@ -4,6 +4,7 @@ article {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: 240px;
+  /* flex-basis: 1; */
 }
 article img {
   width: 100%;

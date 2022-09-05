@@ -20,9 +20,9 @@
       </header>
 
       <main>
-        <section>
+        {% block main %}
           {{ content | safe }}
-        </section>
+        {% endblock main %}
       </main>
 
       <footer>

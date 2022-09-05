@@ -8,4 +8,6 @@
     {% include 'wiki/wiki-navbar.njk' %}
 {% endblock header %}
 
-{{content | safe}}
+{% block main %}
+    <section>{{content | safe}}</section>
+{% endblock main %}
