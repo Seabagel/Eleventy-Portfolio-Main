@@ -4,16 +4,16 @@
     {% include "portfolio/portfolio-head.njk" %}
 {% endblock head %}
 
-{# {% block header %}
-    {% include 'wiki/wiki-navbar.njk' %}
-{% endblock header %} #}
+{% block header %}
+    {% include "portfolio/portfolio-header.njk" %}
+{% endblock header %}
 
 {% block main %}
-    {% include "portfolio/portfolio-main.njk" %}
+    {# {% include "portfolio/portfolio-main.njk" %} #}
+    {{content | safe}}
 {% endblock main %}
 
 {% block footer %}
     {% include "portfolio/portfolio-footer.njk" %}
 {% endblock footer %}
 
-{{content | safe}}

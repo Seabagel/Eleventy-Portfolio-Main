@@ -2,9 +2,10 @@ const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minif
 const wikiNavigations = require("./src/_data/wikiNavigations.json");
 const eleventySass = require("eleventy-sass");
 
-
 function srcBywikiNavigationsTag(tagName) {
-  return wikiNavigations[wikiNavigations.findIndex((i) => (i.tag == tagName ? true : false))]
+  return wikiNavigations[
+    wikiNavigations.findIndex((i) => (i.tag == tagName ? true : false))
+  ];
 }
 
 module.exports = function (eleventyConfig) {
@@ -22,6 +23,9 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addFilter("findSlug", function (tagName) {
     return srcBywikiNavigationsTag(tagName).slug;
+  });
+  eleventyConfig.addFilter("bgImage", function (imgURL) {
+    return `\"background-image:  url(\'${imgURL}\')\";`;
   });
 
   return {
