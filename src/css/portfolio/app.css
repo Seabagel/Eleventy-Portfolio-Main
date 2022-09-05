@@ -8,7 +8,7 @@ body {
   font-family: -apple-system, blinkmacsystemfont, avenir next, avenir,
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
-.container {
+header {
   max-width: 1080px;
 }
 main {

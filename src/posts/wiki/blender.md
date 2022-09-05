@@ -1,5 +1,6 @@
 ---
 layout: wiki/wiki-tree-layout.njk
+title: Blender Notes
 num: 0
 ---
 

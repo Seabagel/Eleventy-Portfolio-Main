@@ -1,5 +1,6 @@
 ---
 layout: wiki/wiki-tree-layout.njk
+title: Miniature Painting Notes
 num: 1
 ---
 

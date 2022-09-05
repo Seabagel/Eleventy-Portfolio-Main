@@ -1,0 +1,15 @@
+{% extends "base-layout.njk" %}
+
+{% block head %}
+    {% include "portfolio/portfolio-head.njk" %}
+{% endblock head %}
+
+{# {% block header %}
+    {% include 'wiki/wiki-navbar.njk' %}
+{% endblock header %} #}
+
+{% block footer %}
+    {% include "portfolio/portfolio-footer.njk" %}
+{% endblock footer %}
+
+{{content | safe}}
