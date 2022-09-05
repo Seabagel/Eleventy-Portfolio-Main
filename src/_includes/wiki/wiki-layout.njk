@@ -1,0 +1,11 @@
+{% extends "base-layout.njk" %}
+
+{% block head %}
+    {% include "wiki/wiki-head.njk" %}
+{% endblock head %}
+
+{% block header %}
+    {% include 'wiki/wiki-navbar.njk' %}
+{% endblock header %}
+
+{{content | safe}}

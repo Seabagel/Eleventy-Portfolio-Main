@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block head %}{% endblock head %}
+  </head>
+
+  <body>
+    <!-- Grab the content from the page data, dump it here, and mark it as safe -->
+    <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
+
+    <div class="mainContainer">
+      <header>
+        {% block header %}{% endblock header %}
+      </header>
+
+      <main>
+        <section>
+          {{ content | safe }}
+        </section>
+      </main>
+    </div>
+  </body>
+
+</html>

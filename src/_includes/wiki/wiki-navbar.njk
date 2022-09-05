@@ -1,33 +1,30 @@
-<header>
-  <div class="navbarContainer">
-    {# <a href="/posts/{{ tags }}"> #}
-    <a onclick="toggleElement('myNavigation')" id="navButton">
+<div class="navbarContainer">
+  {# <a href="/posts/{{ tags }}"> #}
+  <a onclick="toggleElement('myNavigation')" id="navButton">
         📖 Menu
       </a>
 
-    <nav id="myNavigation" style="display: none;">
-      <div class="scrollRelative">
-        <div class="scrollAbsolute">
-          {% for nav in wikiNavigations %}
-            <h3>
-              <a href="/posts/{{ nav.slug }}">{{ nav.title }}</a>
-            </h3>
-            <ul>
-              {% for stuff in collections[nav.tag] %}
-                <li>
-                  <a href="{{ stuff.url }}">{{ stuff.data.title }}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          {% endfor %}
-          <a href="/">
+  <nav id="myNavigation" style="display: none;">
+    <div class="scrollRelative">
+      <div class="scrollAbsolute">
+        {% for nav in wikiNavigations %}
+          <h3>
+            <a href="/posts/{{ nav.slug }}">{{ nav.title }}</a>
+          </h3>
+          <ul>
+            {% for stuff in collections[nav.tag] %}
+              <li>
+                <a href="{{ stuff.url }}">{{ stuff.data.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+        <a href="/">
           🏡 Home
         </a>
-        </div>
       </div>
-    </nav>
-  </div>
-
-</header>
+    </div>
+  </nav>
+</div>
 
 {# {% if tags %}{{ tags }} / {% endif %}{{ title }} #}
