@@ -22,7 +22,8 @@ section {
   padding: var(--section-padding);
 
   li {
-    margin: 4px 0;
+    margin: 1rem 0;
+    line-height: 1.4rem;
   }
 
   h1,
@@ -60,9 +61,13 @@ section {
     line-height: 1.24;
   }
 
+  p {
+    line-height: 1.8rem;
+  }
+
   blockquote {
-    border-left: 0.4rem solid gray;
-    background-color: #dadada;
+    border-left: 0.4rem solid #bbb;
+    background-color: #efefef;
     padding: 0.25rem 1.75rem;
     font-style: italic;
     border-radius: 2px;
@@ -82,5 +87,13 @@ section {
   }
   a:hover {
     color: rgb(255, 143, 15);
+  }
+
+  code {
+    margin-left: 2px;
+    background-color: grey;
+    color: white;
+    padding: .24rem .32rem;
+    border-radius: 2px;
   }
 }

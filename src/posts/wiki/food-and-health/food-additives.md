@@ -1,7 +1,7 @@
 ---
 layout: wiki/wiki-pages.njk
 title: Food Additives
-tags: FoodAdditives
+tags: Food
 ---
 
 > Below is a list of all the chemical additives approved by the FDA for commercial use. All their names, categories, and what they are commonly used for
