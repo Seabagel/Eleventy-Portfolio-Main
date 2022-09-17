@@ -58,3 +58,8 @@ When you're finally at 15% or below, you need to replace the different strategy 
   - This is wouldn't affect people above 15% body fat
 - Not every part of your body will lose fat equally
   - Fat prioritizes *first*: your Arm, Face, Shoulder, Chest, and then your Belly
+
+## Calorie Density and Other nutrients
+> - [US Dept. of Agriculture: FoodData Central](https://fdc.nal.usda.gov/)
+> - [CalorieFriend: Calorie per gram](https://www.caloriefriend.com/en)
+> - [Calories.info: Sort by Calorie](https://www.calories.info/)
