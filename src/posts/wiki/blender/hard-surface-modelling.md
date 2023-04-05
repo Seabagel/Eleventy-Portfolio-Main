@@ -31,3 +31,11 @@ tags: Blender
 6. Two ways to fix this
    1. Select the same edges and Mark Sharp
    2. Use the Edge Split Modifier
+
+## Sharpening Edges
+- Mesh Filter Tool
+  - Go to Sculpt Mode
+  - Pick the Mesh Filter Tool
+  - On the Top menu bar, change the Filter Type: "Enchance
+  - Drag the cursor from Left to right until you get the desired sharpness
+  - This tool also has Delay Viewport updates, to reduce the amount of times Blender re-renders the high-poly mesh when moving around the viewport

@@ -4,5 +4,8 @@
 ## INSTALL ELEVENTY
 `npm install --save-dev @11ty/eleventy`
 
-## RUN ELEVENTY
+## BUILD ELEVENTY
 `npx @11ty/eleventy`
+
+## RUN ELEVENTY
+`npx @11ty/eleventy --serve `
