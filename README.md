@@ -1,4 +1,4 @@
-# 11ty-Wiki-Portfolio
+# Eleventy-Portfolio-Main
 A personal Wiki for saving knowledge I find
 
 > The website gets exported to a [different repo](https://github.com/Seabagel/Eleventy-Portfolio-Website),
