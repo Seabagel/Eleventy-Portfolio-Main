@@ -49,3 +49,13 @@ tags: Blender
   - Put it above the Shrinkwrap
   - Subdivide 3 times
 - **Apply the Shrinkwrap modifier**
+
+
+## Posing Models
+- Posing 1 Million Poly-count models will slow down your Blender
+  - You can use Multires to move to lower subdivision level
+- Meta-rig requires you to have a complete mesh covering all the bones
+- If Meta-rig isn't possible, you can pose the model using "Auto-IK"
+  - Enable it in the Top right options bar
+  - It allows you to move bones and it'll influence the adjacent bones, like an IK
+  - And you can still pose your model with G and R, like an FK
